@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Document</title>
-    <script src="script.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors Game</h1>
+      <div class="btns">
+        <button class="btn btn-choise" id="rock">Rock</button>
+        <button class="btn btn-choise" id="paper">Paper</button>
+        <button class="btn btn-choise" id="scissors">Scissors</button>
+      </div>
+      <div class="round"></div>
+      <div class="score">
+        <div class="player-container">
+          <b>Player</b>
+          <div class="choise">Choise: <span id="player-choise"></span></div>
+          <div class="score">Score: <span id="player-score">0</span></div>
+        </div>
+        <div class="computer-container">
+          <b>Computer</b>
+          <div class="choise">
+            Choise:
+            <div id="computer-choise"></div>
+          </div>
+          <div class="score">
+            Score:
+            <div id="computer-score">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end-screen">
+      <div id="winner-text"></div>
+      <button class="btn new-game" id="new-game">New Game</button>
+    </div>
+    <div id="overlay"></div>
+  </body>
 </html>
