@@ -38,11 +38,22 @@ body {
   border-radius: 0.25em;
   background-color: hsl(258, 100%, 50%);
   padding: 0.25em 0.75em;
+  min-width: 169px;
+  transition: all 100ms ease-in-out;
 }
 
 .btn:hover {
   background-color: hsl(258, 100%, 40%);
   cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.emojis {
+  font-size: 2.5em;
 }
 
 .score,

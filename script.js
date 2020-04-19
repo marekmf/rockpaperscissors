@@ -74,6 +74,8 @@ newGameBtn.addEventListener('click', () => {
   computerScore = 0;
   playerScoreBoard.textContent = playerScore;
   computerScoreBoard.textContent = computerScore;
+  playerChoise.textContent = '';
+  computerChoise.textContent = '';
   roundText.textContent = '';
   endScreen.classList.remove('active');
   overlay.classList.remove('active');
